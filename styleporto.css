@@ -1,0 +1,263 @@
+.wrap{
+    width: 1366px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: #5B3D3D;
+    height: 650px;
+}
+@font-face {
+    font-family: "fontsaya";
+    src: url(Boldfinger.ttf);
+}
+@font-face {
+    font-family: "fontsaya2";
+    src: url(02_APompadourTextSample.ttf);
+}
+@font-face {
+    font-family: "fontsaya3";
+    src: url(LTSaeada-Light.otf);
+}
+@font-face {
+    font-family: "fontsaya4";
+    src: url(Fantasm\ and\ Secrets.ttf);
+}
+@font-face {
+    font-family: "fontsaya5";
+    src: url(Muthiara\ demo\ version.otf);
+}
+@font-face {
+    font-family: "fontsaya6";
+    src: url(adelia.otf);
+}
+@font-face {
+    font-family: "fontsaya7";
+    src: url(Hello\ Cute\ TTF.ttf);
+}
+.navbar {
+    font-size: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3A1F1F;
+    width: 1366px;
+    height: 90px;
+    font-family: "fontsaya", Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    float: left;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.navbar a:hover {
+    color: #FFF0F0;
+    transition: .3s;
+    text-shadow: #FFF0F0 0px 0px 20px;
+}
+.header img{
+    width: 440px;
+    height: auto;
+    float: left;
+    margin-top: 161px;
+}
+.about{
+    width: 600px;
+    height: auto;
+    float: right;
+    margin-top: 120px;
+    margin-right: 220px;
+    color: white;
+    font-family: "fontsaya7", Arial, sans-serif;
+    font-size: 20px;
+}
+.text{
+    width: 600px;
+    height: auto;
+    float: right;
+    margin-top: 10px;
+    margin-right: 220px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+}
+.abouticon{
+    width: 600px;
+    height: auto;
+    float: right;
+    margin-top: 10px;
+    margin-right: 220px;
+    font-size: 30px;
+}
+.abouticon a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px;
+    margin-right: 15px;
+}
+.abouticon a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #5B3D3D;
+    color: white;
+    line-height: 45px;
+    text-align: center;
+    transition: .3s;
+}
+.abouticon a:hover{
+    background: #220505;
+    box-shadow: 0 0 20px #220505;
+}
+.abouticon i{
+    color: white;
+}
+.btn-box{
+    float: inline-end;
+    margin-right: 658px;
+    margin-top: 15px;
+    border-color: #FFF0F0;
+    border: 1px solid #FFF0F0;
+    padding: 5px;
+    width: 150px;
+    background-color: #FFF0F0;
+}
+.btn-box a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    margin-left: 10px;
+}
+.btn-box a:hover{
+    color: #220505;
+    transition: .3s;
+    text-shadow: #220505 0px 0px 15px;
+}
+.header2{
+    background-color: #FFF0F0;
+    height: 650px;
+    margin: 0;
+}
+.text2{
+    width: 600px;
+    height: auto;
+    color: black;
+    font-family: "fontsaya", Arial, sans-serif;
+    font-size: 30px;
+    margin-left: 60px;
+    padding-top: 90px;
+}
+.text2 h1 span{
+    color: #614242;
+    font-family: "fontsaya5", Arial, sans-serif;
+}
+.about2 img{
+    width: 400px;
+    height: auto;
+    float: right;
+    margin-right: 120px;
+}
+.text3{
+    margin-top: 20px;    
+    width: 600px;
+    height: auto;
+    font-size: 27px;
+    margin-left: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text4{
+    color: #220505;
+    font-family: "fontsaya", Arial, sans-serif;
+    font-size: 30px;
+    margin-left: 60px;
+    padding-top: 90px;
+}
+.text4 h1 span{
+    color: #FFF0F0;
+    font-family: "fontsaya6", Arial, sans-serif;
+}
+.project img{
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 65px;
+    margin-top: 50px;
+    border: 5px solid #000000;
+    border-radius: 10px;
+}
+.codra{
+    float: left;
+    margin-left: 70px;
+    font-size: 20px;
+    color: white;
+}
+.bambam{
+    float: left;
+    margin-left: 235px;
+    font-size: 20px;
+    color: white;
+}
+.smkn2yk{
+    float: left;
+    margin-left: 183px;
+    font-size: 20px;
+    color: white;
+}
+.project4{
+    float: left;
+    margin-left: 187px;
+    font-size: 20px;
+    color: white;
+}
+.project2 img{
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 65px;
+    margin-top: 170px;
+    border: 5px solid #000000;
+    border-radius: 10px;
+}
+.brosur{
+    float: left;
+    margin-left: 70px;
+    font-size: 20px;
+    color: black;
+}
+.b{
+    float: left;
+    margin-left: 190px;
+    font-size: 20px;
+    color: black;
+}
+.c{
+    float: left;
+    margin-left: 183px;
+    font-size: 20px;
+    color: black;
+}
+.d{
+    float: left;
+    margin-left: 187px;
+    font-size: 20px;
+    color: black;
+}
+.text5{
+    color: #220505;
+    font-family: "fontsaya5", Arial, sans-serif;
+    font-size: 30px;
+    margin-left: 60px;
+    padding-top: 90px;
+}
+.text5 h1 span{
+    color: #FFF0F0;
+    font-family: "fontsaya", Arial, sans-serif;
+}
