@@ -261,3 +261,10 @@
     color: #FFF0F0;
     font-family: "fontsaya", Arial, sans-serif;
 }
+.iconskills img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 65px;
+    margin-top: 70px;
+}
