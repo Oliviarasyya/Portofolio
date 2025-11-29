@@ -62,14 +62,11 @@ var typed = new Typed(".textt", {
     requestAnimationFrame(draw);
 })();
 
-/* Project section parallax on cursor (per-image) */
 (function(){
-    // select images inside project sections (supports multiple project groups)
     const imgs = Array.from(document.querySelectorAll('.project img, .project2 img'));
     if(!imgs.length) return;
 
     imgs.forEach((img, i) => {
-        // Per-image state with interpolation for smooth motion
         const state = {
             targetX: 0, targetY: 0, targetR: 0, targetShadow: 6,
             curX: 0, curY: 0, curR: 0, curShadow: 6,
@@ -78,18 +75,15 @@ var typed = new Typed(".textt", {
         const depthBase = 8 + (i % 3) * 4;
 
         function tick(){
-            // lerp (smooth) towards target
-            const ease = 0.14; // smaller = slower, larger = snappier
+            const ease = 0.14; 
             state.curX += (state.targetX - state.curX) * ease;
             state.curY += (state.targetY - state.curY) * ease;
             state.curR += (state.targetR - state.curR) * ease;
             state.curShadow += (state.targetShadow - state.curShadow) * ease;
 
-            // apply transform
             img.style.transform = `translate3d(${state.curX}px, ${state.curY}px, 0) rotate(${state.curR}deg)`;
             img.style.boxShadow = `0 ${state.curShadow}px ${Math.abs(state.curShadow)*0.6}px rgba(0,0,0,0.25)`;
 
-            // continue until near target
             const dx = Math.abs(state.curX - state.targetX);
             const dy = Math.abs(state.curY - state.targetY);
             const dr = Math.abs(state.curR - state.targetR);
@@ -106,7 +100,7 @@ var typed = new Typed(".textt", {
             const height = rect.height || 1;
             const clientX = e.clientX !== undefined ? e.clientX : (e.touches && e.touches[0] && e.touches[0].clientX) || 0;
             const clientY = e.clientY !== undefined ? e.clientY : (e.touches && e.touches[0] && e.touches[0].clientY) || 0;
-            const x = (clientX - rect.left) / width - 0.5; // -0.5..0.5 relative to image
+            const x = (clientX - rect.left) / width - 0.5; 
             const y = (clientY - rect.top) / height - 0.5;
             const depth = depthBase;
             state.targetX = x * depth * 1.2;
