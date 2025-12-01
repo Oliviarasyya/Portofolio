@@ -1,5 +1,5 @@
 var typed = new Typed(".textt", {
-    strings:["Canva Designer", "CDR and Adobe Designer", "Web Developer"],
+    strings:["Graphic Designer", "Web Developer" , "Web Designer" ],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -119,5 +119,69 @@ var typed = new Typed(".textt", {
         img.addEventListener('pointermove', onPointerMove);
         img.addEventListener('pointerleave', onLeave);
         img.addEventListener('touchmove', onPointerMove, {passive: true});
+    });
+})();
+
+(function(){
+    function animateExpItem(item){
+        const percent = parseInt(item.getAttribute('data-percent') || '0', 10);
+        const fill = item.querySelector('.exp-fill');
+        const pctText = item.querySelector('.exp-percent');
+        if(!fill || !pctText) return;
+        let start = null;
+        const duration = 1000;
+        function step(ts){
+            if(!start) start = ts;
+            const t = Math.min(1, (ts - start) / duration);
+            const eased = 1 - Math.pow(1 - t, 2); 
+            const current = Math.round(percent * eased);
+            fill.style.width = current + '%';
+            pctText.textContent = current + '%';
+            if(t < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+    }
+
+    const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+            if(entry.isIntersecting){
+                const items = entry.target.querySelectorAll('.exp-item');
+                items.forEach(it => {
+                    if(!it.classList.contains('exp-animated')){
+                        it.classList.add('exp-animated');
+                        animateExpItem(it);
+                    }
+                });
+            }
+        });
+    }, {threshold: 0.25});
+
+    const expSection = document.querySelector('#header6 .experience');
+    if(expSection) observer.observe(expSection);
+})();
+
+(function(){
+    document.addEventListener('click', function(e){
+        const link = e.target.closest('a[href^="#"]');
+        if(!link) return;
+        const href = link.getAttribute('href');
+        if(!href || href === '#') return;
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if(!target) return;
+        const wrap = document.querySelector('.wrap');
+        if(wrap){
+            wrap.style.opacity = '0';
+            wrap.style.transition = 'opacity 150ms ease-out';
+            setTimeout(()=>{
+                target.scrollIntoView({behavior: 'smooth'});
+                if(wrap){
+                    wrap.style.transition = 'none';
+                    wrap.style.opacity = '1';
+                    wrap.offsetHeight; // trigger reflow
+                    wrap.style.transition = 'opacity 150ms ease-out';
+                }
+            }, 150);
+        }
     });
 })();

@@ -9,6 +9,7 @@
     background-color: #5B3D3D;
     height: 650px;
 }
+
 @font-face {
     font-family: "fontsaya";
     src: url(Boldfinger.ttf);
@@ -37,31 +38,35 @@
     font-family: "fontsaya7";
     src: url(Hello\ Cute\ TTF.ttf);
 }
+@font-face {
+    font-family: "fontsaya8";
+    src: url(Utendo-Regular.ttf);
+}
 .navbar {
-    font-size: 24px;
+    font-size: 22px;
     position: fixed;
     top: 0;
     left: 0;
     background-color: #3A1F1F;
     width: 1366px;
-    height: 90px;
-    font-family: "fontsaya", Arial, sans-serif;
+    height: 60px;
+    font-family: "fontsaya3", Arial, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
     float: left;
+    box-shadow: #000000 0px 4px 15px;
 }
 .navbar a {
-    color: white;
+    color: #FFF0F0;
     text-decoration: none;
     margin-right: 50px;
     margin-left: 50px;
 }
 .navbar a:hover {
-    color: #FFF0F0;
+    color: #7e7b7b;
     transition: .3s;
-    text-shadow: #FFF0F0 0px 0px 20px;
 }
 .header img{
     width: 440px;
@@ -75,7 +80,7 @@
     float: right;
     margin-top: 120px;
     margin-right: 220px;
-    color: white;
+    color: #FFF0F0;
     font-family: "fontsaya7", Arial, sans-serif;
     font-size: 20px;
 }
@@ -85,12 +90,13 @@
     float: right;
     margin-top: 10px;
     margin-right: 220px;
-    color: white;
+    color: #FFF0F0;
     font-size: 24px;
+    font-family: "fontsaya8", Arial, sans-serif;
 }
 .textt{
     color: #220505;
-    text-shadow: #FFF0F0 0px 0px 10px;
+    text-shadow: #473030 0px 0px 10px;
 }
 .abouticon{
     width: 600px;
@@ -111,7 +117,7 @@
     height: 40px;
     border-radius: 50%;
     background: #5B3D3D;
-    color: white;
+    color: #FFF0F0;
     line-height: 45px;
     text-align: center;
     transition: .3s;
@@ -121,7 +127,7 @@
     box-shadow: 0 0 20px #220505;
 }
 .abouticon i{
-    color: white;
+    color: #FFF0F0;
 }
 .btn-box{
     float: inline-end;
@@ -145,21 +151,21 @@
     text-shadow: #220505 0px 0px 15px;
 }
 .header2{
-    background-color: #FFF0F0;
+    background-color: #5B3D3D;
     height: 650px;
     margin: 0;
 }
 .text2{
     width: 600px;
     height: auto;
-    color: black;
+    color: #FFF0F0;
     font-family: "fontsaya", Arial, sans-serif;
     font-size: 30px;
     margin-left: 60px;
     padding-top: 90px;
 }
 .text2 h1 span{
-    color: #614242;
+    color: #220505;
     font-family: "fontsaya5", Arial, sans-serif;
 }
 .about2 img{
@@ -174,7 +180,8 @@
     height: auto;
     font-size: 27px;
     margin-left: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #b3abab;
+    font-family: "fontsaya8", Arial, sans-serif;
 }
 .text4{
     color: #220505;
@@ -200,7 +207,6 @@
     transition: box-shadow 220ms ease; 
     will-change: transform;
     transform-origin: center center;
-    position: relative;
     z-index: 210;
 }
 .codra{
@@ -241,25 +247,25 @@
     float: left;
     margin-left: 70px;
     font-size: 20px;
-    color: black;
+    color: #FFF0F0;
 }
 .poster{
     float: left;
     margin-left: 190px;
     font-size: 20px;
-    color: black;
+    color: #FFF0F0;
 }
 .c{
     float: left;
     margin-left: 160px;
     font-size: 20px;
-    color: black;
+    color: #FFF0F0;
 }
 .d{
     float: left;
     margin-left: 187px;
     font-size: 20px;
-    color: black;
+    color: #FFF0F0;
 }
 .text5{
     color: #220505;
@@ -273,8 +279,8 @@
     font-family: "fontsaya", Arial, sans-serif;
 }
 .iconskills img{
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     float: left;
     margin-left: 65px;
     margin-top: 70px;
@@ -286,25 +292,79 @@
     top:0;
     width:100%;
     height:100%;
-    z-index:50; /* sit above page backgrounds but below navbar (z-index:100) */
+    z-index:100; 
     pointer-events:none;
     mix-blend-mode:screen;
 }
-
-.wrap{
-    position:relative;
-    z-index:1;
+.experience{
+    margin: 30px 60px 40px 60px;
+    color: #220505;
+}
+.exp-desc{
+    font-size: 30px;
+    margin-bottom: 15px;}
+.exp-list{
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+.exp-item{
+    width: calc(33% - 12px);
+    min-width: 220px;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.exp-label{
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.exp-bar{
+    height: 12px;
+    background: rgba(0,0,0,0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.exp-fill{
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg,#FFF0F0,#FFF0F0);
+    transition: width 700ms cubic-bezier(.2,.8,.2,1);
+}
+.exp-percent{
+    margin-top: 8px;
+    font-weight: 600;
+    text-align: right;
+    color: #220505;
 }
 
-/* Keep interactive elements and icons above the particle canvas */
-.navbar,
-.abouticon a,
-.iconskills img,
-.project img,
-.project2 img,
-.btn-box,
-.about2 img,
-.header img {
-    position: relative;
-    z-index: 200;
+/* Fade-in animation for page load */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.wrap {
+    animation: fadeIn 600ms ease-out forwards;
+}
+
+header {
+    animation: fadeIn 800ms ease-out forwards;
+    animation-delay: 50ms;
+}
+
+header:nth-of-type(2) {
+    animation-delay: 100ms;
+}
+
+header:nth-of-type(3) {
+    animation-delay: 150ms;
 }
