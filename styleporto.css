@@ -6,7 +6,7 @@
     padding: 0;
 }
 .header{
-    background-color: #5B3D3D;
+    background-color: #220000;
     height: 650px;
 }
 
@@ -47,7 +47,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #3A1F1F;
+    background-color: #422626;
     width: 1366px;
     height: 60px;
     font-family: "fontsaya3", Arial, sans-serif;
@@ -56,7 +56,7 @@
     align-items: center;
     z-index: 100;
     float: left;
-    box-shadow: #000000 0px 4px 15px;
+    box-shadow: #000000 0px 4px 20px;
 }
 .navbar a {
     color: #FFF0F0;
@@ -65,7 +65,7 @@
     margin-left: 50px;
 }
 .navbar a:hover {
-    color: #7e7b7b;
+    color: #8a5757;
     transition: .3s;
 }
 .header img{
@@ -95,8 +95,8 @@
     font-family: "fontsaya8", Arial, sans-serif;
 }
 .textt{
-    color: #220505;
-    text-shadow: #473030 0px 0px 10px;
+    color: #ad7272;
+    text-shadow: #4e4646 0px 0px 10px;
 }
 .abouticon{
     width: 600px;
@@ -116,14 +116,14 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #5B3D3D;
+    background: #a0969600;
     color: #FFF0F0;
     line-height: 45px;
     text-align: center;
     transition: .3s;
 }
 .abouticon a:hover{
-    background: #220505;
+    background: #573333;
     box-shadow: 0 0 20px #220505;
 }
 .abouticon i{
@@ -146,12 +146,12 @@
     margin-left: 10px;
 }
 .btn-box a:hover{
-    color: #220505;
+    color: #ff0000;
     transition: .3s;
     text-shadow: #220505 0px 0px 15px;
 }
 .header2{
-    background-color: #5B3D3D;
+    background-color: #220000;
     height: 650px;
     margin: 0;
 }
@@ -165,7 +165,7 @@
     padding-top: 90px;
 }
 .text2 h1 span{
-    color: #220505;
+    color: #8a5757;
     font-family: "fontsaya5", Arial, sans-serif;
 }
 .about2 img{
@@ -184,7 +184,7 @@
     font-family: "fontsaya8", Arial, sans-serif;
 }
 .text4{
-    color: #220505;
+    color: #8a5757;
     font-family: "fontsaya", Arial, sans-serif;
     font-size: 30px;
     margin-left: 60px;
@@ -268,7 +268,7 @@
     color: #FFF0F0;
 }
 .text5{
-    color: #220505;
+    color: #8a5757;
     font-family: "fontsaya5", Arial, sans-serif;
     font-size: 30px;
     margin-left: 60px;
@@ -298,7 +298,7 @@
 }
 .experience{
     margin: 30px 60px 40px 60px;
-    color: #220505;
+    color: #FFF0F0;
 }
 .exp-desc{
     font-size: 30px;
@@ -339,10 +339,9 @@
     margin-top: 8px;
     font-weight: 600;
     text-align: right;
-    color: #220505;
+    color: #FFF0F0;
 }
 
-/* Fade-in animation for page load */
 @keyframes fadeIn {
     from {
         opacity: 0;
